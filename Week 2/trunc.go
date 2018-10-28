@@ -1,17 +1,17 @@
 package main
-import(
+
+import (
 	"fmt"
+	"math"
 )
-func main(){
-	var x float64
-	fmt.Println("Enter First float number:")
-	fmt.Scan(&x)
-		y := fmt.Sprintf("%.0f", x)
-	
-	var a float64
-	fmt.Println("Enter Second float number:")
-	fmt.Scan(&a)
-		b := fmt.Sprintf("%.0f", a)
-		fmt.Println("First truncated number is:",y)
-		fmt.Println("Second truncated number is:",b)
+
+func main()  {
+	var num float64
+	fmt.Print(" Input First float point number: ")
+fmt.Scan(&num)
+var num2 float64
+fmt.Print(" Input Second float point number: ")
+fmt.Scan(&num2)
+fmt.Println(math.Trunc(num))
+fmt.Println(math.Trunc(num2))
 }
